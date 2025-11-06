@@ -35,7 +35,6 @@ export default function Index() {
       className="flex-1  bg-primary"
     >
       <Image source={images.bg} className="absolute w-full z-0" />
-      {/* Replace ScrollView with FlatList */}
       <FlatList
         data={movies}
         keyExtractor={(item) => item.id.toString()}
@@ -51,7 +50,7 @@ export default function Index() {
           <View>
             <Image
               source={icons.logo}
-              className="w-12 h-10 mt-16 mb-2 mx-auto"
+              className="w-8 h-10 mt-16 mb-2 mx-auto"
             />
 
             {moviesLoading || terendingLoading ? (
@@ -96,7 +95,7 @@ export default function Index() {
         }
         renderItem={({ item }) => <MovieCard {...item} />}
         contentContainerStyle={{
-          paddingBottom: insets.bottom + 20, // Add padding for the bottom inset
+          paddingBottom: insets.bottom + 60, // Add padding for the bottom inset
         }}
         showsVerticalScrollIndicator={false}
       />

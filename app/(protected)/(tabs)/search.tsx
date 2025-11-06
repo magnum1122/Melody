@@ -71,7 +71,7 @@ export default function Search() {
         ListHeaderComponent={
           <>
             <View className="w-full flex-row justify-center items-center">
-              <Image source={icons.logo} className="w-12 h-10 mt-16 mb-2 mx-auto"/>
+              <Image source={icons.logo} className="w-8 h-10 mt-16 mb-2 mx-auto"/>
             </View>
             <View className="my-5">
               <SearchBar 

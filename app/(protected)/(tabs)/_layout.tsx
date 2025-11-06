@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tabs } from 'expo-router'
-import { ImageBackground, StatusBar, Text, View } from 'react-native'
+import { ImageBackground, Text, View } from 'react-native'
 import { images } from '@/constants/images'
 import Ionicons from '@expo/vector-icons/Ionicons';
 
@@ -57,9 +57,6 @@ const _layout = () => {
             options={{
                 title: 'Home',
                 headerShown: false,
-                // tabBarIcon: ({color, size, focused}) => (
-                //     <HomeIcon size={30} color={color}/>
-                // )
                 tabBarIcon: ({focused}) => (
                     <>
                         <TabIcon 

@@ -93,12 +93,13 @@ export default function Saved() {
           gap: 12,
           marginVertical: 8
         }}
-        contentContainerStyle={{paddingBottom: 20}}
+        contentContainerStyle={{
+          paddingBottom: insets.bottom + 60, // Add padding for the bottom inset
+        }}
         ListHeaderComponent={
           <>
             <View className="w-full flex-row justify-center items-center">
-            <Image source={icons.logo} className="w-12 h-10 mt-16 mb-2 mx-auto"/>
-              {/* <Image source={icons.logo} className="w-12 h-10 mt-7 mb-4 mx-auto"/> */}
+            <Image source={icons.logo} className="w-8 h-10 mt-16 mb-2 mx-auto"/>
             </View>
             <Text className="font-bold text-2xl text-white mb-4">
               Saved Movies
